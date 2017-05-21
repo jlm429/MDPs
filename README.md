@@ -8,7 +8,7 @@
 ### Value Iteration (src/GridWorldVI.java)
 It took value iteration 20 iterations to converge on the grid world domain.   Below is a list of the rewards given after convergence with red values denoting higher negatives and blues closer to the terminating state 0.  
 
-![Component Diagram](/MDPs/images/ValueIterationRewards.PNG)
+![Component Diagram](https://github.com/jlm429/MDPs/blob/master/images/ValueIterationRewards.PNG)
 
 ### Policy Iteration (src/GridWorldPI.java)
 
