@@ -13,16 +13,16 @@ It took value iteration 20 iterations to converge on the grid world domain.   Be
 ### Policy Iteration (src/GridWorldPI.java)
 
 It took policy iteration 14 iterations to converge on the grid world domain.   Below is an image of the policies after convergence with reward values.  
-![Component Diagram](/GroupProject/Docs/DesignDocument/component.png)
+![Component Diagram](https://github.com/jlm429/MDPs/blob/master/images/PolicyIterationGrid.PNG)
 
 
 ### Q-Learning (src/GridWorldQL.java)
 
 The Q-Learning algorithm converges around 100 iterations on the grid world domain taking approximately 25 time steps to reach the termination state.   It takes longer to learn the environment but has more value in real world applications since it is a learning algorithm as opposed to a planning algorithm. Below is a graph that includes the time steps per iteration for Q-learning in the grid world domain with gamma=.99 and a learning rate of .9.   
-![Component Diagram](/GroupProject/Docs/DesignDocument/component.png)
+![Component Diagram](https://github.com/jlm429/MDPs/blob/master/images/smallgridworldQLearning.png)
 
 
 ### Summary
 
 Both value and policy iteration converge to the same answer.  Policy iteration often converges in fewer iterations than value iteration, as it did in this case, presumably because the value function changes little from one policy to the next (Sutton and Barto, 1988).  Greedy exploration strategies were much faster and due to the simplicity of the grid world domain equally as effective.  A more exploratory Q-Learning algorithm might be helpful for more complex domains. Below are gamma values with complexity charts for Q-Learning. 
-![Component Diagram](/GroupProject/Docs/DesignDocument/component.png)
+![Component Diagram](https://github.com/jlm429/MDPs/blob/master/images/LargeGridWorldQL.PNG)
