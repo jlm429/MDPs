@@ -5,18 +5,18 @@
 > Coding Resource <a href="https://github.com/jmacglashan/burlap">Brown-UMBC Reinforcement Learning and Planning (BURLAP) java code library</a>
 
 
-### Value Iteration (src/GridWorldVI.java)
+### Value Iteration (<a href="https://github.com/jlm429/MDPs/blob/master/src/GridWorldVI.java">src/GridWorldVI.java</a>)
 It took value iteration 20 iterations to converge on the grid world domain.   Below is a list of the rewards given after convergence with red values denoting higher negatives and blues closer to the terminating state 0.  
 
 ![Component Diagram](https://github.com/jlm429/MDPs/blob/master/images/ValueIterationRewards.PNG)
 
-### Policy Iteration (src/GridWorldPI.java)
+### Policy Iteration (<a href="https://github.com/jlm429/MDPs/blob/master/src/GridWorldPI.java">src/GridWorldPI.java</a>)
 
 It took policy iteration 14 iterations to converge on the grid world domain.   Below is an image of the policies after convergence with reward values.  
 ![Component Diagram](https://github.com/jlm429/MDPs/blob/master/images/PolicyIterationGrid.PNG)
 
 
-### Q-Learning (src/GridWorldQL.java)
+### Q-Learning (<a href="https://github.com/jlm429/MDPs/blob/master/src/GridWorldQL.java">src/GridWorldQL.java</a>)
 
 The Q-Learning algorithm converges around 100 iterations on the grid world domain taking approximately 25 time steps to reach the termination state.   It takes longer to learn the environment but has more value in real world applications since it is a learning algorithm as opposed to a planning algorithm. Below is a graph that includes the time steps per iteration for Q-learning in the grid world domain with gamma=.99 and a learning rate of .9.   
 
