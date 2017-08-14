@@ -18,7 +18,7 @@ Below is an image of the policies after convergence with reward values.
 
 ### Q-Learning (<a href="https://github.com/jlm429/MDPs/blob/master/src/GridWorldQL.java">src/GridWorldQL.java</a>)
 
-The Q-Learning algorithm converges around 100 iterations on the grid world domain taking approximately 25 time steps to reach the termination state.   It takes longer to learn the environment but has more value in real world applications since it is not a model based algorithm. Below is a graph that includes the time steps per iteration for Q-learning in the grid world domain with gamma=.99 and a learning rate of .9.   
+The Q-Learning algorithm converges around 100 iterations on the grid world domain taking approximately 25 time steps to reach the termination state.   It takes longer to learn the environment but has more value in real world applications since it is not model based. Below is a graph that includes the time steps per iteration for Q-learning in the grid world domain with gamma=.99 and a learning rate of .9.   
 
 
 ![Component Diagram](https://github.com/jlm429/MDPs/blob/master/images/smallgridworldQLearning.png)
