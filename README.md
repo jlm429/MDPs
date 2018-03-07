@@ -6,7 +6,7 @@
 
 
 ### Value Iteration (<a href="https://github.com/jlm429/MDPs/blob/master/src/GridWorldVI.java">src/GridWorldVI.java</a>)
-Below is a list of the rewards given after convergence with red values denoting higher negatives and blues closer to the terminating state 0.  
+Below is a list of the rewards given after convergence with red values denoting higher negatives and blues closer to the terminating state.  
 
 ![Component Diagram](https://github.com/jlm429/MDPs/blob/master/images/ValueIterationRewards.PNG)
 
