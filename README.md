@@ -1,6 +1,4 @@
-### Markov Decision Process 
-
-> A reinforcement learning task that satisfies the Markov property (Pr{Rt+1 = r, St+1 = s'| St, At}) is called a Markov decision process, or MDP. In the grid world model shown below, the agent can perform one of four actions, up, down, left or right, in any state which have a stochastic effect. With probability 2/3, the actions cause the agent to move one cell in the corresponding direction, and with probability 1/3, the agent moves instead in one of the other three directions, each with probability 1/9. (Sutton, R.S. and Precup, D. and Singh, S., (1999), Richard S., Barto, Andrew G. (1998)).  The reward function sets the terminal state to zero (the grey circle at the top right) and all other state/action transitions to negative one.   
+### Fun with MDPs
 >
 > Coding Resource <a href="https://github.com/jmacglashan/burlap">Brown-UMBC Reinforcement Learning and Planning (BURLAP) java code library</a>
 
@@ -20,7 +18,7 @@ The Q-Learning algorithm converges around 100 iterations on the grid world domai
 
 ### Summary
 
-Both value and policy iteration converge to the same answer.  Policy iteration often converges in fewer iterations than value iteration presumably because the value function changes little from one policy to the next (Sutton and Barto, 1988).  Greedy exploration strategies were faster and, due to the simplicity of the grid world domain, equally as effective.  A more exploratory Q-Learning algorithm might be helpful for complex domains. Below are gamma values with complexity charts for Q-Learning. 
+Both value and policy iteration converge to the same answer. Greedy exploration strategies were faster and, due to the simplicity of the grid world domain, equally as effective.  A more exploratory Q-Learning algorithm might be helpful for complex domains. Below are gamma values with complexity charts for Q-Learning. 
 
 
 ![Component Diagram](https://github.com/jlm429/MDPs/blob/master/images/LargeGridWorldQL.PNG)
