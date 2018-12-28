@@ -4,7 +4,7 @@
 
 ### Policy Iteration (<a href="https://github.com/jlm429/MDPs/blob/master/src/GridWorldPI.java">src/GridWorldPI.java</a>)
 
-Below is an image of the policies after convergence with reward values.  
+Below is an image of the policy after convergence.  
 ![Component Diagram](https://github.com/jlm429/MDPs/blob/master/images/PolicyIterationGrid.PNG)
 
 
@@ -18,7 +18,7 @@ The Q-Learning algorithm converges around 100 iterations on the grid world domai
 
 ### Summary
 
-Both value and policy iteration converge to the same answer. Greedy exploration strategies were faster and, due to the simplicity of the grid world domain, equally as effective.  A more exploratory Q-Learning algorithm might be helpful for complex domains. Below are gamma values with complexity charts for Q-Learning. 
+Both value and policy iteration converge to the same answer. Greedy exploration strategies were faster and, due to the simplicity of the grid world domain, equally as effective. Below are gamma values with complexity charts for Q-Learning. 
 
 
 ![Component Diagram](https://github.com/jlm429/MDPs/blob/master/images/LargeGridWorldQL.PNG)
