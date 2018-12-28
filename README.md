@@ -18,7 +18,7 @@ The Q-Learning algorithm converges around 100 iterations on the grid world domai
 
 ### Summary
 
-Both value and policy iteration converge to the same answer. Greedy exploration strategies were faster and, due to the simplicity of the grid world domain, equally as effective. Below are gamma values with complexity charts for Q-Learning. 
+Below are gamma values with complexity charts for Q-Learning. Both value and policy iteration converge to the same policy. 
 
 
 ![Component Diagram](https://github.com/jlm429/MDPs/blob/master/images/LargeGridWorldQL.PNG)
