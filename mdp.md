@@ -1,3 +1,4 @@
+> Coding Resource <a href="https://github.com/jmacglashan/burlap">Brown-UMBC Reinforcement Learning and Planning (BURLAP) java code library</a>  
 
 ### Policy Iteration (<a href="https://github.com/jlm429/MDPs/blob/master/src/GridWorldPI.java">src/GridWorldPI.java</a>)
 
