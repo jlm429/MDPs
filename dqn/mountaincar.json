@@ -1,0 +1,1 @@
+{"gamma_max": 0.9, "batch_size": 128, "explore": 0.99, "layer1_size": 32, "layer2_size": 16, "min_explore": 0.1, "gamma_exp": 1.02, "decay": 0.9, "episodes": 200, "minimum_samples": 128, "lr": 0.001, "gamma": 0.5}
