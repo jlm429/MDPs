@@ -1,6 +1,6 @@
-> Deep Q-Learning (<a href="https://github.com/jlm429/RL/blob/master/dqn/dqnLearner.py">dqnLearner.py</a>, <a href="https://github.com/jlm429/RL/blob/master/dqn/neural_net.py">neural_net.py</a>)  
+> ## Deep Q-Learning (<a href="https://github.com/jlm429/RL/blob/master/dqn/dqnLearner.py">dqnLearner.py</a>, <a href="https://github.com/jlm429/RL/blob/master/dqn/neural_net.py">neural_net.py</a>)  
 
-### Q-learning uses temporal differences to estimate state-action values and discretization or function approximation is used for evaluation of the state.
+Q-learning uses temporal differences to estimate state-action values and discretization or function approximation to evaluate the state.
 Instead of using a Q-table, a neural network can be used to approximate q-values. Many function
 approximators, such as neural nets and local weighted regression can cause instability in reinforcement
 learning by exaggerating the difference between target values (Gordon 1995). Deep Q-learning 
