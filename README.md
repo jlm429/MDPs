@@ -4,5 +4,5 @@
 
 ### openAI / DQN Learner
 
-> <a href="hhttps://github.com/jlm429/RL/blob/master/dqn/dqn.MD">dqn.md</a>
+> <a href="https://github.com/jlm429/RL/blob/master/dqn/dqn.MD">dqn.md</a>
 
