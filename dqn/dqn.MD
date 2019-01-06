@@ -2,7 +2,7 @@
 
 Q-learning uses temporal differences to estimate state-action values and discretization or function approximation to evaluate the state.
 Instead of using a Q-table, a neural network can be used to approximate q-values. Many function
-approximators, such as neural nets and local weighted regression can cause instability in reinforcement
+approximators, such as neural nets and local weighted regression, can cause instability in reinforcement
 learning by exaggerating the difference between target values (Gordon 1995). Deep Q-learning 
 uses experience replay to help resolve this issue by randomizing samples.  The
 behavior distribution is averaged over many previous states which breaks correlations and reduces the
@@ -12,4 +12,12 @@ provide a mechanism for updating value functions (Minh et al. 2015). Representat
 learning enables automatic feature engineering and end-to-end learning through gradient descent, so that
 reliance on domain knowledge is significantly reduced or even removed (Li 2017).
 
+![DQN pseudocode](https://github.com/jlm429/RL/blob/master/images/dqnpseudocode.PNG)
+
+More difficult domains such as lunar lander and mountain car (links) require precise hyper-parameter selection and more sophisticated
+techniques to prevent overfitting and instability.  These can include soft target updates (nature paper), Boltzmann and bayesian exploration methods, and 
+vectorized neural net updates to improve training times.  Below is a training graph using a dqn with some of these methods to solve the lunar lander domain 
+(200 point average over 100 consecutive runs).   
+
+![DQN pseudocode](https://github.com/jlm429/RL/blob/master/images/lunarlander.PNG)
 
