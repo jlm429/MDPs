@@ -32,7 +32,7 @@ class dqnLearner(object):
                 env_params = json.load(fp)
             return env_params
         elif env=="Acrobot-v1":
-            with open('acrobat.json', 'r') as fp:
+            with open('acrobot.json', 'r') as fp:
                 env_params = json.load(fp)
             return env_params
         else:
