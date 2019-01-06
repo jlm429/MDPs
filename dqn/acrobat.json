@@ -1,0 +1,1 @@
+{"env_name": "Acrobot-v1", "model_name": "Acrobot-v1.h5", "gamma_max": 0.9, "batch_size": 32, "explore": 0.99, "layer1_size": 32, "layer2_size": 64, "min_explore": 0.01, "gamma_exp": 1.002, "decay": 0.99, "episodes": 1000, "minimum_samples": 32, "lr": 0.0001, "gamma": 0.5}

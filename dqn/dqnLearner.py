@@ -12,7 +12,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 class dqnLearner(object):
-    def __init__(self, env, mode, nn_name):
+    def __init__(self, env, mode):
         env_params= self.get_env_parameters(env)
         from neural_net import neural_net
         nn = neural_net(env_params)
@@ -31,8 +31,8 @@ class dqnLearner(object):
             with open('cartpole.json', 'r') as fp:
                 env_params = json.load(fp)
             return env_params
-        elif env=="MountainCar-v0":
-            with open('mountaincar.json', 'r') as fp:
+        elif env=="Acrobot-v1":
+            with open('acrobat.json', 'r') as fp:
                 env_params = json.load(fp)
             return env_params
         else:
@@ -46,5 +46,7 @@ class dqnLearner(object):
 
 
 if __name__=="__main__":
-    dqnLearner = dqnLearner("CartPole-v0", "train", "nn_test.h5")
-    dqnLearner.display_env_parameters("CartPole-v0")
+    
+    dqnLearner = dqnLearner("Acrobot-v1", "test")
+    #dqnLearner.display_env_parameters("CartPole-v0")
+    

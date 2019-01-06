@@ -49,12 +49,13 @@ class neural_net(object):
         self.finalScores = np.zeros([self.episodes])
         
     def load_model(self):
+        print "loading model ", self.model_name
         self.model=load_model(self.model_name)
 
     def save_model(self):
         self.model.save(self.model_name)
         
-    #egreedy
+    #egreedy (training)
     def select_action(self, state):
         if self.explore < self.min_explore:
             self.explore=self.min_explore
@@ -63,6 +64,12 @@ class neural_net(object):
             action = np.random.randint(len(values))
         else:
             action = np.argmax(values)
+        return action
+        
+    #greedy (testing)
+    def select_action2(self, state):
+        values = self.model.predict(state.reshape(1, self.total_states))[0]
+        action = np.argmax(values)
         return action
     
     def train_model(self):
@@ -120,5 +127,24 @@ class neural_net(object):
             self.model.fit(state, new_value, verbose=0)
         
     def test_model(self):
-        print ""
+        episodes=100
+        totalSumReward=0 
+        self.load_model()
+        for i in range(0,episodes):
+            state=self.env.reset()
+            done=False
+            totalReward = 0 #episode total reward
+            
+            while not done:
+                self.env.render()
+                action = self.select_action2(state)
+                observation, reward, done, info = self.env.step(action)
+                state=observation
+                totalReward=totalReward+reward
+                
+            print "reward=", totalReward
+            totalSumReward=totalSumReward+totalReward
+            print totalSumReward, totalReward
+        print "avg reward=", totalSumReward/episodes 
+        print "num episodes=", episodes
         
