@@ -1,4 +1,5 @@
 > ## Deep Q-Learning (<a href="https://github.com/jlm429/RL/blob/master/dqn/dqnLearner.py">dqnLearner.py</a>, <a href="https://github.com/jlm429/RL/blob/master/dqn/neural_net.py">neural_net.py</a>)  
+> OpenAI domains (![CartPole](https://gym.openai.com/envs/CartPole-v0/), ![Acrobot](https://gym.openai.com/envs/Acrobot-v1/))
 
 Q-learning uses temporal differences to estimate state-action values and discretization or function approximation to evaluate the state.
 Instead of using a Q-table, a neural network can be used to approximate q-values. Many function
@@ -10,14 +11,15 @@ variance of the updates (Minh et al. 2013). The concept of experience replay has
 and the belief that time-compressed reactivation of recently experienced trajectories during offline periods
 provide a mechanism for updating value functions (Minh et al. 2015). Representation learning with deep
 learning enables automatic feature engineering and end-to-end learning through gradient descent, so that
-reliance on domain knowledge is significantly reduced or even removed (Li 2017).
+reliance on domain knowledge is significantly reduced or even removed (Li 2017).  
 
 ![DQN pseudocode](https://github.com/jlm429/RL/blob/master/images/dqnpseudocode.PNG)
 
-More difficult domains such as lunar lander and mountain car (links) require precise hyper-parameter selection and more sophisticated
-techniques to prevent overfitting and instability.  These can include soft target updates (nature paper), Boltzmann and bayesian exploration methods, and 
-vectorized neural net updates to improve training times.  Below is a training graph using a dqn with some of these methods to solve the lunar lander domain 
-(200 point average over 100 consecutive runs).   
+More difficult domains such as lunar lander and mountain car require precise hyper-parameter selection and more sophisticated
+techniques to prevent overfitting and instability.  These can include soft target updates (nature paper), Boltzmann and Bayesian exploration methods, and 
+vectorized neural net updates for improve training times.  Below is a training graph using a dqn with some of these additional methods implemented 
+to solve the lunar lander domain (200 point average over 100 consecutive runs).   
 
-![DQN pseudocode](https://github.com/jlm429/RL/blob/master/images/lunarlander.PNG)
+>Lunar Lander DQN Training Graph ![Lunar Lander](https://gym.openai.com/envs/LunarLander-v2/)
+![Lunar Lander](https://github.com/jlm429/RL/blob/master/images/lunarlander.PNG)
 
