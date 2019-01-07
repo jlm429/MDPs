@@ -13,6 +13,8 @@ provide a mechanism for updating value functions (Minh et al. 2015). Representat
 learning enables automatic feature engineering and end-to-end learning through gradient descent, so that
 reliance on domain knowledge is significantly reduced or even removed (Li 2017).  
 
+><a href="https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf"> DQN Pseudocode</a>
+
 ![DQN pseudocode](https://github.com/jlm429/RL/blob/master/images/dqnpseudocode.PNG)
 
 More difficult domains such as lunar lander and mountain car require precise hyper-parameter selection and more sophisticated
