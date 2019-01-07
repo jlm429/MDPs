@@ -23,7 +23,7 @@ reliance on domain knowledge is significantly reduced or even removed
 Complex domains such as <a href="https://gym.openai.com/envs/LunarLander-v2/">lunar lander</a> and 
 <a href="https://gym.openai.com/envs/MountainCarContinuous-v0/"> mountain car</a> require precise hyper-parameter tuning and more sophisticated
 techniques to prevent overfitting and instability.  These can include soft target updates 
-<a href="https://arxiv.org/pdf/1509.02971.pdf"> (Lillicrap et al. 2015) </a>, Boltzmann and Bayesian exploration methods, and 
+<a href="https://arxiv.org/pdf/1509.02971.pdf"> (Lillicrap et al. 2015) </a>, Boltzmann and Bayesian exploration, and 
 vectorized neural net updates for improved training times.  Below is a training graph using a dqn with some of these additional methods implemented 
 to solve the lunar lander domain (200 point average over 100 consecutive runs).   
 
