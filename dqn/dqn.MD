@@ -17,7 +17,7 @@ reliance on domain knowledge is significantly reduced or even removed (Li 2017).
 
 ![DQN pseudocode](https://github.com/jlm429/RL/blob/master/images/dqnpseudocode.PNG)
 
-More difficult domains such as lunar lander and mountain car require precise hyper-parameter tuning and more sophisticated
+More complex domains such as lunar lander and mountain car require precise hyper-parameter tuning and more sophisticated
 techniques to prevent overfitting and instability.  These can include soft target updates, Boltzmann and Bayesian exploration methods, and 
 vectorized neural net updates for improved training times.  Below is a training graph using a dqn with some of these additional methods implemented 
 to solve the lunar lander domain (200 point average over 100 consecutive runs).   
