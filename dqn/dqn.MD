@@ -4,14 +4,17 @@
 Q-learning uses temporal differences to estimate state-action values and discretization or function approximation to evaluate the state.
 Instead of using a Q-table, a neural network can be used to approximate q-values. Many function
 approximators, such as neural nets and local weighted regression, can cause instability in reinforcement
-learning by exaggerating the difference between target values (Gordon 1995). Deep Q-learning 
+learning by exaggerating the difference between target values 
+<a href="https://www.sciencedirect.com/science/article/pii/B9781558603776500402"> (Gordon 1995)</a>. Deep Q-learning 
 uses experience replay to help resolve this issue by randomizing samples.  The
 behavior distribution is averaged over many previous states which breaks correlations and reduces the
-variance of the updates (Minh et al. 2013). The concept of experience replay has roots in neuroscience
+variance of the updates <a href="https://arxiv.org/pdf/1312.5602.pdf"> (Minh et al. 2013)</a>. 
+The concept of experience replay has roots in neuroscience
 and the belief that time-compressed reactivation of recently experienced trajectories during offline periods
-provide a mechanism for updating value functions (Minh et al. 2015). Representation learning with deep
-learning enables automatic feature engineering and end-to-end learning through gradient descent, so that
-reliance on domain knowledge is significantly reduced or even removed (Li 2017).  
+provide a mechanism for updating value functions <a href="https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf"> (Minh et al. 2015)</a>. 
+Representation learning with deep learning enables automatic feature engineering and end-to-end learning through gradient descent, so that
+reliance on domain knowledge is significantly reduced or even removed 
+<a href="https://arxiv.org/pdf/1701.07274.pdf"> (Li 2017)</a>.  
 
 >DQN pseudocode (from <a href="https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf"> DQN Nature Paper</a>)
 
@@ -19,7 +22,8 @@ reliance on domain knowledge is significantly reduced or even removed (Li 2017).
 
 Complex domains such as <a href="https://gym.openai.com/envs/LunarLander-v2/">lunar lander</a> and 
 <a href="https://gym.openai.com/envs/MountainCarContinuous-v0/"> mountain car</a> require precise hyper-parameter tuning and more sophisticated
-techniques to prevent overfitting and instability.  These can include soft target updates, Boltzmann and Bayesian exploration methods, and 
+techniques to prevent overfitting and instability.  These can include soft target updates 
+<a href="https://arxiv.org/pdf/1509.02971.pdf"> (Lillicrap et al. 2015) </a>, Boltzmann and Bayesian exploration methods, and 
 vectorized neural net updates for improved training times.  Below is a training graph using a dqn with some of these additional methods implemented 
 to solve the lunar lander domain (200 point average over 100 consecutive runs).   
 
