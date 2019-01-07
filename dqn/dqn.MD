@@ -16,10 +16,10 @@ reliance on domain knowledge is significantly reduced or even removed (Li 2017).
 ![DQN pseudocode](https://github.com/jlm429/RL/blob/master/images/dqnpseudocode.PNG)
 
 More difficult domains such as lunar lander and mountain car require precise hyper-parameter selection and more sophisticated
-techniques to prevent overfitting and instability.  These can include soft target updates (nature paper), Boltzmann and Bayesian exploration methods, and 
+techniques to prevent overfitting and instability.  These can include soft target updates, Boltzmann and Bayesian exploration methods, and 
 vectorized neural net updates for improve training times.  Below is a training graph using a dqn with some of these additional methods implemented 
 to solve the lunar lander domain (200 point average over 100 consecutive runs).   
 
->Lunar Lander DQN Training Graph ![Lunar Lander](https://gym.openai.com/envs/LunarLander-v2/)
+>Lunar Lander DQN Training Graph <a href="https://gym.openai.com/envs/LunarLander-v2/"> Lunar Lander</a>
 ![Lunar Lander](https://github.com/jlm429/RL/blob/master/images/lunarlander.PNG)
 
