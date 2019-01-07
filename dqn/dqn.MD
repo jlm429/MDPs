@@ -20,6 +20,6 @@ techniques to prevent overfitting and instability.  These can include soft targe
 vectorized neural net updates for improve training times.  Below is a training graph using a dqn with some of these additional methods implemented 
 to solve the lunar lander domain (200 point average over 100 consecutive runs).   
 
->Lunar Lander DQN Training Graph <a href="https://gym.openai.com/envs/LunarLander-v2/"> Lunar Lander</a>
+><a href="https://gym.openai.com/envs/LunarLander-v2/"> Lunar Lander</a> DQN Training Graph
 ![Lunar Lander](https://github.com/jlm429/RL/blob/master/images/lunarlander.PNG)
 
