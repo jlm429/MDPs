@@ -1,5 +1,5 @@
 > ## Deep Q-Learning (<a href="https://github.com/jlm429/RL/blob/master/dqn/dqnLearner.py">dqnLearner.py</a>, <a href="https://github.com/jlm429/RL/blob/master/dqn/neural_net.py">neural_net.py</a>)  
-> OpenAI domains (![CartPole](https://gym.openai.com/envs/CartPole-v0/), ![Acrobot](https://gym.openai.com/envs/Acrobot-v1/))
+> OpenAI domains (<a href="https://gym.openai.com/envs/CartPole-v0/">CartPole</a>, <a href="https://gym.openai.com/envs/Acrobot-v1/">Acrobot</a>)
 
 Q-learning uses temporal differences to estimate state-action values and discretization or function approximation to evaluate the state.
 Instead of using a Q-table, a neural network can be used to approximate q-values. Many function
