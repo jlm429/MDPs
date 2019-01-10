@@ -8,7 +8,7 @@ learning by exaggerating the difference between target values
 <a href="https://www.sciencedirect.com/science/article/pii/B9781558603776500402"> (Gordon 1995)</a>. Deep Q-learning 
 uses experience replay to help resolve this issue by randomizing samples. The 
 behavior distribution is averaged over many previous states which breaks correlations and reduces the
-variance of the updates <a href="https://arxiv.org/pdf/1312.5602.pdf"> (Minh et al. 2013)</a>. It should be noted however that reinforcement with function 
+variance of the updates <a href="https://arxiv.org/pdf/1312.5602.pdf"> (Minh et al. 2013)</a>. It should be noted however that reinforcement learning with function 
 approximation does not have guaranteed convergence properties (<a href="http://www.leemon.com/papers/1995b.pdf">Baird 1995,</a> aka Baird's Counter Example).  
 <br>
 The concept of experience replay has roots in neuroscience
