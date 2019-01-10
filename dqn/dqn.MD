@@ -6,14 +6,15 @@ Instead of using a Q-table, a neural network can be used to approximate q-values
 approximators, such as neural nets and local weighted regression, can cause instability in reinforcement
 learning by exaggerating the difference between target values 
 <a href="https://www.sciencedirect.com/science/article/pii/B9781558603776500402"> (Gordon 1995)</a>. Deep Q-learning 
-uses experience replay to help resolve this issue by randomizing samples.  The
-behavior distribution is averaged over many previous states which breaks correlations and reduces the
+uses experience replay to help resolve this issue by randomizing samples.  It should be noted however that reinforcement with function 
+approximation does not have guaranteed convergence properties <a href="http://www.leemon.com/papers/1995b.pdf"> (Baird 1995), aka Baird's Counter Example</a>.   
+The behavior distribution is averaged over many previous states which breaks correlations and reduces the
 variance of the updates <a href="https://arxiv.org/pdf/1312.5602.pdf"> (Minh et al. 2013)</a>. 
 The concept of experience replay has roots in neuroscience
 and the belief that time-compressed reactivation of recently experienced trajectories during offline periods
 provide a mechanism for updating value functions <a href="https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf"> (Minh et al. 2015)</a>. 
 Representation learning with deep learning enables automatic feature engineering and end-to-end learning through gradient descent, so that
-reliance on domain knowledge is significantly reduced or even removed 
+reliance on domain knowledge is significantly reduced or even removed
 <a href="https://arxiv.org/pdf/1701.07274.pdf"> (Li 2017)</a>.  
 
 >DQN pseudocode (from <a href="https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf"> DQN Nature Paper</a>)
