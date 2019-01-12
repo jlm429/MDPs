@@ -9,7 +9,7 @@ learning by exaggerating the difference between target values
 uses experience replay to help resolve this issue by randomizing samples. The 
 behavior distribution is averaged over many previous states which breaks correlations and reduces the
 variance of the updates <a href="https://arxiv.org/pdf/1312.5602.pdf"> (Minh et al. 2013)</a>. It should be noted however that Q-learning with function 
-approximation does not have the same guaranteed convergence properties of the original Q-learning algorithm(<a href="http://www.leemon.com/papers/1995b.pdf">Baird 1995</a>).  
+approximation does not have the same guaranteed convergence properties as the original Q-learning algorithm (<a href="http://www.leemon.com/papers/1995b.pdf">Baird 1995</a>).  
 <br>
 The concept of experience replay has roots in neuroscience
 and the belief that time-compressed reactivation of recently experienced trajectories during offline periods
