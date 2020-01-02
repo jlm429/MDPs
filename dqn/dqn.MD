@@ -2,7 +2,7 @@
 > OpenAI domains (<a href="https://gym.openai.com/envs/CartPole-v0/">CartPole</a>, <a href="https://gym.openai.com/envs/Acrobot-v1/">Acrobot</a>)
 
 Deep Q-learning uses experience replay to help resolve instability issues when using Q-learning with function approximation 
-<a href="http://www.leemon.com/papers/1995b.pdf">Baird 1995</a>.  The concept of experience replay has roots in neuroscience
+<a href="http://www.leemon.com/papers/1995b.pdf">(Baird 1995)</a>.  The concept of experience replay has roots in neuroscience
 and the belief that time-compressed reactivation of recently experienced trajectories during offline periods
 provide a mechanism for updating value functions <a href="https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf"> (Minh et al. 2015)</a>. 
 
