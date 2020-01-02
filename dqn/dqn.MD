@@ -17,7 +17,7 @@ additional techniques to speed up training and reduce instability.  These can in
 vectorized neural net updates.  Below are training results with some of these additional methods implemented used
 to solve the lunar lander domain (200 point average over 100 consecutive runs).   
 
->Trained Agent
+><a href="https://gym.openai.com/envs/LunarLander-v2/"> Lunar Lander</a> Trained Agent
 
 ![Video](https://github.com/jlm429/RL/blob/master/images/lunar_lander.gif)
 
