@@ -23,5 +23,5 @@ to solve the lunar lander domain (200 point average over 100 consecutive runs).
 
 >Trained Agent
 
-![Video](https://www.youtube.com/watch?v=r-64RxCRyRM)
+![Video] (https://github.com/jlm429/RL/blob/master/images/lunar_lander.gif)
 
