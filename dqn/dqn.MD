@@ -3,9 +3,7 @@
 
 Deep Q-learning uses experience replay to help resolve instability issues when using Q-learning with function approximation.  
 The concept of experience replay has roots in neuroscience and the belief that time-compressed reactivation of recently experienced 
-trajectories during offline periods provide a mechanism for updating value functions 
-
-(<a href="http://www.leemon.com/papers/1995b.pdf">Baird 1995</a>, <a href="https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf"> (Minh et al. 2015)</a>). 
+trajectories during offline periods provide a mechanism for updating value functions (<a href="http://www.leemon.com/papers/1995b.pdf">Baird 1995</a>, <a href="https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf"> (Minh et al. 2015)</a>). 
 
 >DQN pseudocode (from <a href="https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf"> DQN Nature Paper</a>)
 
