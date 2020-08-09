@@ -10,7 +10,7 @@ trajectories during offline periods provide a mechanism for updating value funct
 ![DQN pseudocode](https://github.com/jlm429/RL/blob/master/images/dqnpseudocode.PNG)
 
 <a href="https://gym.openai.com/envs/LunarLander-v2/">Lunar lander</a> and 
-<a href="https://gym.openai.com/envs/MountainCarContinuous-v0/"> mountain car</a> require more precise hyper-parameter tuning and
+<a href="https://gym.openai.com/envs/MountainCarContinuous-v0/"> mountain car</a> may require more precise hyper-parameter tuning and
 additional techniques to speed up training and reduce instability.  These can include soft target updates 
 <a href="https://arxiv.org/pdf/1509.02971.pdf"> (Lillicrap et al. 2015) </a>, Boltzmann and Bayesian exploration, and 
 vectorized neural net updates.  Below are training results with some of these additional methods implemented used
